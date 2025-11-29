@@ -84,7 +84,6 @@
 	<br />
 	<br />
 	<div style = "text-align:right; margin-right:10px;" class = "navbar navbar-default navbar-fixed-bottom">
-		<label>&copy; Copyright HOR 2017 </label>
 	</div>
 </body>
 <script src = "js/jquery.js"></script>
