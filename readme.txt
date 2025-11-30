@@ -1,31 +1,78 @@
-Free Download Source Code "Online Hotel Reservation "
+# Online Hotel Reservation (PHP + MySQL)
 
-FIRST Download
+A simple hotel booking web application made using **WAMP** and **VS Code**.  
+The system has two sides: **User** and **Admin**.
 
-1.XAMPP
+---
 
-2."TEXT EDITOR" NOTEPAD++ OR SUBLIME TEXT 3 / ETC.
+## Features
 
-3"Online Hotel Reservation "
+### User Side
+- View available rooms
+- View room details
+- Book rooms online
+- View other details of Hotel(pictures,rules and regulations, contact detail)
 
-4. Download the zip file/ download winrar
+### Admin Side
+Access at:  
+`http://localhost/Online_Hotel_Reservation/admin`
 
-5. Extract the file and copy "Online Hotel Reservation " folder
+Admin can:
+- Add / Edit / Delete rooms  
+- Add / Edit / Delete other admins  
+- Manage bookings in 3 sections:
+  - **Pending** – new booking requests  
+  - **Check-in** – confirmed & staying guests  
+  - **Check-out** – completed bookings
 
-6.Paste inside root directory/ where you install xammp local disk C: drive D: drive E: paste: (for xampp/htdocs, 
+---
 
-7. Open PHPMyAdmin (http://localhost/phpmyadmin)
+## Booking Flow (Admin)
 
-8. Create a database with name hotel_db
+### 1. Pending
+- Admin sees all new booking requests  
+- Two buttons: **Allow** or **Discard**  
+- If **Allow** → admin must enter:
+  - Number of days  
+  - Room number  
+  - Extra bed (Yes/No)  
+- After submitting → booking moves to **Check-in**
 
-6. Import db_hor.sql file(given inside the zip package in SQL file folder)
+### 2. Check-in
+- Shows all current staying guests  
+- Admin can press **Checkout** for any booking  
+- Once checkout is clicked → booking moves to **Check-out**
 
-7.Run the script http://localhost/Online_Hotel_Reservation 
+### 3. Check-out
+- Shows completed/finished bookings
+
+---
+
+## Tools Used
+- **WAMP Server** (Apache + MySQL)
+- **Visual Studio Code (VS Code)**
+- PHP, MySQL, HTML, CSS, JS
+
+---
+
+## Setup Steps
+
+1. Install **WAMP**  
+2. Install **VS Code**  
+3. Place the project folder inside:  
+   `C:\wamp64\www\Online_Hotel_Reservation`
+4. Start WAMP → go to phpMyAdmin  
+5. Create database `hotel_db`  
+6. Import `db_hor.sql` (inside SQL folder)  
+7. Run the project in browser:  
+   `http://localhost/Online_Hotel_Reservation`
+8. Admin Login (default):  
+   - **Username:** admin  
+   - **Password:** admin
+
+---
 
 
-**LOGIN DETAILS** 
+Student Project – Online Hotel Reservation
 
-Admin
-user: admin
-pass: admin
 
